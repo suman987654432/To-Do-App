@@ -1,0 +1,133 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h1 {
+    color: #4a47a3;
+    font-size: 26px;
+  }
+  
+ 
+  .input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    /* align-items: center; */
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #4a47a3;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 10px rgba(108, 99, 255, 0.5);
+  }
+  
+  button {
+    background: #4a47a3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background: #372d8f;
+  }
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background: #4a47a3;
+    color: white;
+  }
+  
+  tr {
+    background: #f9f9f9;
+    transition: 0.3s;
+  }
+  
+  tr:hover {
+    background: #e0e0e0;
+  }
+  
+  /* ====== Buttons for Actions ====== */
+  .delete-btn {
+    background: #ff4d4d;
+  }
+  
+  .delete-btn:hover {
+    background: #cc0000;
+  }
+  
+  .complete-btn {
+    background: #28a745;
+  }
+  
+  .complete-btn:hover {
+    background: #218838;
+  }
+  
+  .incomplete-btn {
+    background: #ffc107;
+  }
+  
+  .incomplete-btn:hover {
+    background: #d39e00;
+  }
+  
+  .line-through {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+
+  @media (max-width: 500px) {
+    input {
+      width: 100%;
+    }
+    .input-container {
+      flex-direction: column;
+    }
+  }
+  
